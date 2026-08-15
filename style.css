@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff1f7;
+    color: #333;
+    text-align: center;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e8,
+        #fff1f7,
+        #ffe0ec
+    );
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.rakhi {
+    font-size: 70px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+
+h1 {
+    font-size: 55px;
+    margin: 20px 0 10px;
+}
+
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+button {
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    background: #ff4f87;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.08);
+}
+
+
+/* SURPRISE */
+
+#surprise {
+    padding: 80px 20px;
+}
+
+
+#surprise h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+
+.message {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+
+/* CARDS */
+
+.card,
+.dna-card,
+.final-card {
+
+    max-width: 650px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.card h3,
+.dna-card h3 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+.card p,
+.dna-card p {
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* DNA */
+
+.dna-card {
+    background: #eef7ff;
+}
+
+
+#dnaMessage {
+    margin-top: 20px;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+/* FINAL */
+
+.final-card {
+    background: #fff0f6;
+}
+
+
+.final-card p {
+    font-size: 20px;
+
+    margin: 15px;
+}
+
+
+.big-heart {
+    font-size: 80px;
+
+    margin-top: 20px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+
+/* HIDDEN */
+
+.hidden {
+    display: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+
+    font-size: 16px;
+
+    background: #ffd6e8;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    #surprise h2 {
+        font-size: 30px;
+    }
+
+    .card,
+    .dna-card,
+    .final-card {
+        margin: 30px 10px;
+        padding: 25px;
+    }
+
+}
